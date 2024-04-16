@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Nycollas Kaique - Tailwind CSS e SASS</title>
+  </head>
+  <body>
+    <header
+      class="flex flex-col sm:flex-row w-full justify-evenly items-center py-6 gap-2"
+    >
+      <div class="font-bold text-xl">interiorfirm</div>
+      <nav class="flex gap-2 items-center flex-col sm:flex-row sm:gap-8">
+        <a href="#" class="nav-items">home</a>
+        <a href="#" class="nav-items">about</a>
+        <a href="#" class="nav-items">service</a>
+        <a href="#" class="nav-items">projects</a>
+        <a href="#" class="nav-items">feedbacks</a>
+      </nav>
+      <button class="btn-green">contact us</button>
+    </header>
+    <article class="h-80vh w-full flex items-center justify-between relative">
+      <div class="absolute z-10 left-16 ml-1 mr-1">
+        <h1 class="text-6xl mb-8">
+          <span class="bg-semi-white lg:bg-transparent">Tailwind CSS</span>
+        </h1>
+        <p class="font-bold">
+          <span class="bg-semi-white lg:bg-transparent"
+            >Esta página foi construída com Tailwind CSS.</span
+          >
+        </p>
+        <p class="font-bold">
+          <span class="bg-semi-white lg:bg-transparent"
+            >Esse design foi providenciado gratuitamente no FIGMA.</span
+          >
+        </p>
+        <p class="font-bold">
+          <span class="bg-semi-white lg:bg-transparent">
+            Esse projeto é um estudo feito por
+            <a
+              href="https://linkedin.com/in/nycollaskaique"
+              target="_blank"
+              class="underline underline-offset-2"
+              >Nycollas Kaique</a
+            >.</span
+          >
+        </p>
+        <p class="font-bold">
+          <span class="bg-semi-white lg:bg-transparent"
+            >Clique no botão abaixo para ir para a página construída com
+            SASS.</span
+          >
+        </p>
+        <button class="btn-green mt-16 right-0 absolute">página SASS</button>
+      </div>
+      <div class="h-80vh w-full flex items-center justify-between relative">
+        <div class="w-full md:w-3/5 h-full bg-dandelion rounded-tr-[50%]"></div>
+
+        <img
+          src="./assets/bg1.png"
+          alt=""
+          class="h-auto lg:h-[85%] absolute right-0"
+        />
+      </div>
+    </article>
+
+    <section class="flex flex-col lg:flex-row">
+      <article
+        class="h-45vh w-full lg:w-[50%] flex items-start justify-between relative overflow-x-hidden sm:overflow-x-visible"
+      >
+        <img
+          src="./assets/bg2.png"
+          class="absolute left-16 -top-20 z-20"
+          alt=""
+        />
+        <img src="./assets/bg3.png" class="absolute left-80" alt="" />
+      </article>
+      <article
+        class="h-45vh w-full lg:w-[50%] flex flex-col items-center justify-evenly relative"
+      >
+        <div class="w-full flex justify-evenly gap-8 text-center">
+          <div class="flex flex-col items-center">
+            <h1 class="text-8xl">24</h1>
+            <p class="first-letter:capitalize text-xl">yers of experience</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <h1 class="text-8xl">162</h1>
+            <p class="first-letter:capitalize text-xl">projects completed</p>
+          </div>
+        </div>
+        <h1 class="first-letter:capitalize text-4xl text-center">
+          make your dream home
+        </h1>
+      </article>
+    </section>
+  </body>
+</html>
