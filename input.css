@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+.nav-items {
+  @apply capitalize hover:underline underline-offset-8;
+}
+.btn-green {
+  @apply capitalize text-white bg-celadon-green hover:bg-emerald-400 transition-all py-3 px-5;
+}
