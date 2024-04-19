@@ -1,0 +1,212 @@
+html {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+header {
+  // flex flex-col sm:flex-row w-full justify-evenly items-center py-6 gap-2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 0;
+  gap: 0.5rem;
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+  }
+  div {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  nav {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 640px) {
+      flex-direction: row;
+      gap: 2rem;
+    }
+    a {
+      color: initial;
+      text-transform: capitalize;
+      text-underline-offset: 8px;
+      text-decoration-line: none;
+      transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
+
+button {
+  text-transform: capitalize;
+  color: white;
+  background-color: rgb(40, 136, 122);
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  &:hover {
+    background-color: rgb(52, 211, 153);
+  }
+}
+
+article {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .div1 {
+    position: absolute;
+    z-index: 10;
+    left: 4rem;
+    margin: 0 0.25rem;
+    h1 {
+      font-size: 3.75rem;
+      line-height: 1;
+      margin-bottom: 2rem;
+      span {
+        background-color: #ffffffcc;
+        @media screen and (min-width: 1024px) {
+          background-color: transparent;
+        }
+      }
+    }
+    p {
+      font-weight: 700;
+      span {
+        background-color: #ffffffcc;
+        @media screen and (min-width: 1024px) {
+          background-color: transparent;
+        }
+        a {
+          text-decoration: underline;
+          text-underline-offset: 2px;
+          color: initial;
+        }
+      }
+    }
+    button {
+      margin-top: 4rem;
+      right: 0;
+      position: absolute;
+    }
+  }
+
+  .div2 {
+    z-index: 0;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    div {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(255, 212, 118);
+      border-top-right-radius: 50%;
+      @media screen and (min-width: 768px) {
+        width: 60%;
+      }
+    }
+    img {
+      height: auto;
+      position: absolute;
+      right: 0px;
+      @media screen and (min-width: 1024px) {
+        height: 85%;
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .article1 {
+    height: 45vh;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+    }
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: hidden;
+    @media screen and (min-width: 640px) {
+      overflow-x: visible;
+    }
+    .img1 {
+      position: absolute;
+      left: 4rem;
+      top: -5rem;
+      z-index: 20;
+    }
+    .img2 {
+      position: absolute;
+      left: 20rem;
+    }
+  }
+  .article2 {
+    height: 45vh;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+      text-align: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          font-size: 6rem /* 96px */;
+          line-height: 1;
+          margin: 0;
+          font-weight: 400;
+        }
+        p {
+          text-transform: capitalize;
+          font-size: 1.25rem /* 20px */;
+          line-height: 1.75rem /* 28px */;
+          margin: 0;
+        }
+      }
+    }
+    h1 {
+      text-transform: capitalize;
+      font-size: 2.25rem /* 36px */;
+      line-height: 2.5rem /* 40px */;
+      text-align: center;
+    }
+  }
+}
